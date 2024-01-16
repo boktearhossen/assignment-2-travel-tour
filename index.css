@@ -154,6 +154,65 @@ font-weight: 800;
     margin-left: 50px;
 }
 
+/* destination=========================================== */
+
+.destination-image1, .destination-image2, .destination-image3, .destination-image4, .destination-image5, .destination-image6, .destination-image7{
+    height: 260px;
+    
+}
+.image img{
+    height: 100%;
+    
+}
+.image{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image h2{
+    position: absolute;
+   
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.destination-image1{
+    grid-area: destination-image1;
+}
+.destination-image2{
+    grid-area: destination-image2;
+}
+.destination-image3{
+    grid-area: destination-image3;
+}
+.destination-image4{
+    grid-area: destination-image4;
+}
+.destination-image5{
+    grid-area: destination-image5;
+}
+.destination-image6{
+    grid-area: destination-image6;
+}
+.destination-image7{
+    grid-area: destination-image7;
+}
+
+
+.destination{
+    display: grid;
+    gap: 12px;
+    margin-top: 30px;
+   grid-template-areas: 
+   "destination-image1    destination-image1    destination-image1    destination-image2     destination-image2  destination-image2"
+   "destination-image3    destination-image3    destination-image4    destination-image4     destination-image5  destination-image5"
+   "destination-image6    destination-image6    destination-image7    destination-image7     destination-image7  destination-image7"
+   ;
+}
+
+
 
 /* recommend-====================================== */
 .recommend{

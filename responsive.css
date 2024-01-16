@@ -46,19 +46,38 @@
     margin-left: 0px;
     margin-top: 30px;
 }
-/* chose */
+/* chose ------------------------------------------*/
 .chose-card{
     width: 100%;
-    
 }
-/* recommend */
+
+
+/* destination ---------------------------------------*/
+.destination{
+    grid-template-areas: 
+     "destination-image1"
+     "destination-image2"
+     "destination-image3"
+     "destination-image4"
+     "destination-image5"
+     "destination-image6"
+     "destination-image7"
+    ;
+ }
+/* recommend ----------------------------*/
 .recommend-card-area{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .recommend-card{
-  width: 90%;
+    
+    width: 100% !important;
 }
+
+
+
 /* newsletter */
 .newsletter{
     display: flex;
@@ -97,5 +116,24 @@
     .recommend-card{
         width: 45%;
       }
+
+/* destination */
+.destination{
+    grid-template-areas: 
+     "destination-image1  destination-image1"
+     "destination-image2  destination-image3"
+     "destination-image4  destination-image5"
+     "destination-image6   destination-image7"
+    
+    ;
+ }
+
+ /* popular */
+ .popular{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 
   }
