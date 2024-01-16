@@ -1,14 +1,101 @@
 /* header */
-
-
 @media screen and (max-width: 600px){
     
+
+    .header-left h2{
+        font-size: 30px;
+        }
+    .header-left img{
+       width: 40px;
+        }
     .nav-link {
         display: none;
     };
-    .menu{
-        display: block;
+    
+
+
+/* banner ====================*/
+
+    .banner h2{
+        font-size: 43px;
+        font-weight:700;
     }
+ .banner-button{
+    display: flex;
+    flex-direction: column;
+    
+ }
+ .banner-button button{
+    margin-bottom: 10px;
+    
+    
+ }
+ .banner-button button:last-child{
+    margin-bottom: 0px;
+ }
+
+ /* popular ================================*/
+.popular{
+    display: flex;
+    flex-direction: column;
+}
+.popular-left{
+    margin-left: 0px;
+}
+.popular-right{
+    margin-left: 0px;
+    margin-top: 30px;
+}
+/* chose */
+.chose-card{
+    width: 100%;
+    
+}
+/* recommend */
+.recommend-card-area{
+    display: flex;
+    flex-direction: column;
+}
+.recommend-card{
+  width: 90%;
+}
+/* newsletter */
+.newsletter{
+    display: flex;
+    flex-direction: column;
+}
+.newsletter-left-content{
+    width: 90%;
+    overflow: hidden;
+
+}
+.newsletter-left-content input button{
+    width: 100%;
+
 }
 
-/* banner */
+.newsletter-right-content{
+    width: 100%;
+    margin-left: 0;
+    margin-top: 16px;
+
+}
+
+
+}
+
+
+@media screen and (min-width: 601px) and (max-width: 2000px) {
+    .menubar{
+        display: none;
+        color: gray;
+    }
+  }
+
+
+@media screen and (max-width: 992px) {
+    .recommend-card{
+        width: 45%;
+      }
+
+  }

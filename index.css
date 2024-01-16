@@ -1,9 +1,7 @@
 body{
     font-family: 'Mulish', sans-serif;
 }
-li{
-   list-style: none;
-}
+
 *{
     margin: 0;
     padding: 0;
@@ -14,7 +12,7 @@ img{
 .container{
     max-width: 1170px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 22px;
 }
 
 
@@ -51,6 +49,8 @@ color: #131318;
 font-size: 18px;
 font-weight: 700;
 margin-left: 30px;
+cursor: pointer;
+list-style: none;
 }
 .nav-link li:first-child{
 color: #FF5400;
@@ -58,8 +58,11 @@ font-size: 18px;
 font-weight: 700;
 margin-left: 30px;
 }
-.menu{
-    display: none;
+.menubar{
+    font-size: 25px;
+    color: gray;
+    margin-right: 11px;
+   
 }
 
 
@@ -96,6 +99,7 @@ line-height: 26px;
     background-color: rgba(128, 128, 128, 0.5);
     color: white;
     padding: 15px 7px 15px 15px;
+    border-radius: 7px;
 }
 .banner-button button:last-child{
   background-color: #FF5400;
@@ -105,16 +109,217 @@ color: #131318;
 background: #fff;
 font-size: 16px;
 font-weight: 700;
-padding: 10px 22px;
+padding: 14px 30px;
 border: none;
-border-radius: 3px;
+border-radius: 5px;
 margin-right: 10px;
+cursor: pointer;
 }
 
 
 
 
+/* popular =============================== */
+.popular{
+    display: flex;
+    margin: 80px 0;
+    
+}
+.popular-left{
+    flex: 1;
+    margin-right: 50px;
+}
+.heading-text{
+color: #131318;
+font-size: 40px;
+font-weight: 800;
+}
+.popular-left p{
+  margin-top: 15px;
+  color: rgba(19, 19, 24, 0.70);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px; 
+}
+.popular-left ul{
+  margin-left: 40px;
+}
+.popular-left button{
+  background: #FF5400;
+  margin-top: 30px;
+  color: #FFF;
+}
+
+.popular-right{
+    margin-left: 50px;
+}
 
 
+/* recommend-====================================== */
+.recommend{
+ margin-bottom: 60px;
+}
+.recommend-text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.recommend-text p{
+   color: #FF5400;
+   font-weight: bold;
+   cursor: pointer;
+   margin-bottom: 10px;
+}
+.recommend-card-area{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.recommend-card{
+    width: 30%;
+    padding:10px;
+    background-color: rgb(209, 206, 206);
+    box-shadow: 1px 2px 9px ;
+    margin-top: 30px;
+}
+
+.recommend-card h3{
+   color: #131318;
+   margin: 8px 0;
+   font-size: 22px;
+   font-weight: 800;
+}
+.recommend-card h4{
+   color: #131318;
+}
+.recommend-card p{
+   color: #FF5400;
+}
+.rating{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.rating i{
+    color: #FF5400;
+}
 
 
+/* chose======================================= */
+.chose{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px 50px;
+
+}
+
+.chose-card{
+    width: 40%;
+    background: #FBB56333;
+    padding: 30px;
+    border-radius: 12px;
+}
+.second{
+ background-color: #bdeaf5;
+}
+
+.chose-card img{
+    width:50px;
+}
+.chose-card h3{
+color: #131318;
+font-size: 24px;
+font-weight: 800;
+margin: 10px 0;
+}
+
+.chose-text h2{
+ margin-bottom: 17px;
+}
+.chose-text p{
+ margin-bottom: 30px;
+}
+
+/* newsletter======================================== */
+.newsletter{
+    display: flex;
+    justify-content: space-between;
+    margin: 70px 0;
+}
+.newsletter-left-content{
+    width: 40%;
+    border: 1px solid #FF5400;
+    padding: 20px;
+}
+.newsletter-left-content input{
+    background-color: rgb(230, 222, 222);
+    outline: none;
+    border: none;
+    width: 90%;
+    padding: 16px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.newsletter-left-content button{
+  background: #FF5400;
+  color: #fff;
+  padding: 15px;
+  width: 97%;
+  border: none;
+  margin: 16px 0;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.newsletter-right-content{
+    width: 55%;
+    margin-left: 60px;
+    position: relative;
+}
+
+
+.discount-card{
+ position: absolute;
+ bottom: 50px;
+ right: 50px;
+ margin-right: 0;
+ background: #FF5400;
+ padding: 12px 25px;
+ text-align: center;
+ color: #fff;
+ transform: rotate(-20deg);
+}
+/* footer --------------------------------------------*/
+.footer{
+    padding: 70px 0;
+    background-color: rgb(243, 231, 231);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.footer-logo{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin-bottom: 20px;
+}
+.footer-logo img{
+    width: 50px;
+    margin-right: 12px;
+}
+.footer-icon {
+    margin: 20px 0;
+    font-size: 25px;
+}
+.footer-icon i{
+    margin-right: 10px;
+    cursor: pointer;
+    
+}
+.copyright{
+    margin-top: 30px;
+}
